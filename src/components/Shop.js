@@ -43,14 +43,14 @@ const Shop = () => {
         <>
 
             <Row>
-                <Col span={20}>
+                <Col xs={{ span:24}} lg={{ span: 20 }}>
                     <Row>
                         {
                             products.map(product => <Product key={product.id} product={product} handleAddToCard={handleAddToCard}></Product>)
                         }
                     </Row>
                 </Col>
-                <Col span={4} style={{ backgroundColor: "#d0d7de", padding: 10 }}>
+                <Col xs={{ span:24 }} lg={{ span: 4 }} style={{ backgroundColor: "#d0d7de", padding: 10 }}>
                     <Typography.Title level={4} style={{ margin: 0 }}>
                         Selected Clothes
                     </Typography.Title>

@@ -11,7 +11,7 @@ const Product = (props) => {
     return (
         <>
 
-            <Col span={8}>
+            <Col xs={{ span:24}} lg={{ span: 8 }}>
 
                 <Card
 
