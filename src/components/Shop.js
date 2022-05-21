@@ -59,8 +59,8 @@ const Shop = () => {
                         cart.map(cardProduct => <List level={5} style={{ paddingTop: "3px", float: "left" }}>-{cardProduct.name}</List>)
                     }
                     
-                    <Button type="primary" onClick={()=>handleSelect()}>CHOOSE 1 FOR ME </Button>
-                    <Button type="primary" onClick={()=>handleChooseAgain()}>CHOOSE AGAIN </Button>
+                    <Button type="primary" onClick={()=>handleSelect()} >CHOOSE 1 FOR ME </Button>
+                    <Button type="primary" onClick={()=>handleChooseAgain()} ghost>CHOOSE AGAIN </Button>
                 </Col>
             </Row>
 

@@ -4,6 +4,7 @@ import Header from './components/Header';
 import Shop from './components/Shop';
 import 'antd/dist/antd.css';
 import { Layout, Menu, Breadcrumb } from 'antd';
+import Ques_ans from './components/Ques_ans';
 function App() {
   const {  Content, Footer } = Layout;
   return (
@@ -13,6 +14,8 @@ function App() {
 
       <Shop></Shop>
       </Content>
+
+      <Ques_ans></Ques_ans>
     </div>
   );
 }
