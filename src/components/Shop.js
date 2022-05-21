@@ -31,27 +31,36 @@ const Shop = () => {
         setCart(newCart);
 
     }
+    const handleChooseAgain = () => {
+
+        // const newCart = [...cart, product];
+        console.log(randomItem);
+        // const newCart = [ randomItem];
+        setCart([]);
+
+    }
     return (
         <>
 
             <Row>
-                <Col span={18}>
+                <Col span={20}>
                     <Row>
                         {
                             products.map(product => <Product key={product.id} product={product} handleAddToCard={handleAddToCard}></Product>)
                         }
                     </Row>
                 </Col>
-                <Col span={6} style={{ backgroundColor: "#d0d7de", padding: 10 }}>
+                <Col span={4} style={{ backgroundColor: "#d0d7de", padding: 10 }}>
                     <Typography.Title level={4} style={{ margin: 0 }}>
                         Selected Clothes
                     </Typography.Title>
 
                     {
-                        cart.map(cardProduct => <List level={5} style={{ paddingTop: "3px", float: "left" }}>{cardProduct.name}</List>)
+                        cart.map(cardProduct => <List level={5} style={{ paddingTop: "3px", float: "left" }}>-{cardProduct.name}</List>)
                     }
                     
-                    <Button type="primary" onClick={()=>handleSelect()}>ADD TO CART </Button>
+                    <Button type="primary" onClick={()=>handleSelect()}>CHOOSE 1 FOR ME </Button>
+                    <Button type="primary" onClick={()=>handleChooseAgain()}>CHOOSE AGAIN </Button>
                 </Col>
             </Row>
 
