@@ -9,7 +9,7 @@ const Header = () => {
                 Shoe Lover
             </Typography.Title>
             <Typography.Title  level={4} style={{ margin: 0 }}>
-                Choose 4 Clothes
+                Choose 4 Shoes
             </Typography.Title>
 
 
