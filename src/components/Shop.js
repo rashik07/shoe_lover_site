@@ -13,7 +13,9 @@ const Shop = () => {
 
     }, [])
 
-
+    const handleAddToCard=(product)=>{
+        console.log(product);
+    }
     return (
         <>
 
@@ -21,7 +23,7 @@ const Shop = () => {
                 <Col span={18}>
                 <Row>
                     {
-                        products.map(product => <Product key={product.id} product={product}></Product>)
+                        products.map(product => <Product key={product.id} product={product} handleAddToCard={handleAddToCard}></Product>)
                     }
                     </Row>
                 </Col>

@@ -6,7 +6,8 @@ import {
   } from '@ant-design/icons';
 const Product = (props) => {
     const { Meta } = Card;
-    const {name,img,price}=props.product
+    const {name,img,price}=props.product;
+
     return (
         <>
          
@@ -20,7 +21,7 @@ const Product = (props) => {
                 >
                     <Meta title={name}  />
                     <h4>Price:{price}</h4>
-                    <Button type="primary">ADD TO CART <ShoppingCartOutlined /></Button>
+                    <Button type="primary" onClick={()=>props.handleAddToCard(props.product)}>ADD TO CART <ShoppingCartOutlined /></Button>
                 </Card>
                 </Col>
                
